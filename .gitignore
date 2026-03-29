@@ -1,0 +1,30 @@
+# secrets — never commit these
+.env
+.env.*
+*.env
+credentials
+
+# AWS
+.aws/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Logs and output
+*.log
+compliance_audit_log.jsonl
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/settings.json
