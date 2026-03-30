@@ -1,0 +1,41 @@
+[
+  {
+    "claim_id": "CLM-2024-001",
+    "policy_number": "POL-789456",
+    "claimant_name": "John Smith",
+    "ssn_last4": "4521",
+    "claim_date": "2024-11-15",
+    "claim_type": "auto_collision",
+    "amount_claimed": 8500.00,
+    "status": "under_review",
+    "adjuster_id": "ADJ-042",
+    "incident_location": "Indianapolis, IN",
+    "medical_expenses": 1200.00
+  },
+  {
+    "claim_id": "CLM-2024-002",
+    "policy_number": "POL-123987",
+    "claimant_name": "Sarah Johnson",
+    "ssn_last4": "8834",
+    "claim_date": "2024-11-18",
+    "claim_type": "property_damage",
+    "amount_claimed": 15200.00,
+    "status": "approved",
+    "adjuster_id": "ADJ-017",
+    "incident_location": "Carmel, IN",
+    "medical_expenses": 0.00
+  },
+  {
+    "claim_id": "CLM-2024-003",
+    "policy_number": "POL-456321",
+    "claimant_name": "Mike Davis",
+    "ssn_last4": "2267",
+    "claim_date": "2024-11-20",
+    "claim_type": "liability",
+    "amount_claimed": 45000.00,
+    "status": "under_review",
+    "adjuster_id": "ADJ-042",
+    "incident_location": "Tipton, IN",
+    "medical_expenses": 22000.00
+  }
+]
