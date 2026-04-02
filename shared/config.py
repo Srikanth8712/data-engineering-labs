@@ -13,6 +13,13 @@ DATABRICKS_HOST       = os.getenv("DATABRICKS_HOST")
 DATABRICKS_TOKEN      = os.getenv("DATABRICKS_TOKEN")
 DATABRICKS_CLUSTER_ID = os.getenv("DATABRICKS_CLUSTER_ID")
 
+# ── RDS PostgreSQL ────────────────────────────────────
+RDS_HOST     = os.getenv("RDS_HOST")
+RDS_PORT     = int(os.getenv("RDS_PORT", "5432"))
+RDS_DB       = os.getenv("RDS_DB")
+RDS_USER     = os.getenv("RDS_USER")
+RDS_PASSWORD = os.getenv("RDS_PASSWORD")
+
 # ── Environment ──────────────────────────────────────
 ENV = os.getenv("ENV", "dev")   # dev | tst | prod
 
@@ -30,12 +37,16 @@ PHARMA_PII_FIELDS    = []   # AE data has no direct PII in this dataset
 def validate():
     """Fail fast if critical config is missing."""
     missing = [k for k, v in {
-        "RAW_BUCKET": RAW_BUCKET,
+        "RAW_BUCKET"      : RAW_BUCKET,
         "PROCESSED_BUCKET": PROCESSED_BUCKET,
+        "RDS_HOST"        : RDS_HOST,
+        "RDS_DB"          : RDS_DB,
+        "RDS_USER"        : RDS_USER,
+        "RDS_PASSWORD"    : RDS_PASSWORD,
     }.items() if not v]
     if missing:
         raise EnvironmentError(
-            f"Missing required environment variables: {missing}\n"
+            f"Missing required env variables: {missing}\n"
             f"Check your .env file."
         )
 
