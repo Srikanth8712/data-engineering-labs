@@ -1,0 +1,14 @@
+{
+  "Records": [
+    {
+      "s3": {
+        "bucket": {
+          "name": "de-labs-sgorripati-raw"
+        },
+        "object": {
+          "key": "dev/insurance/claims/2026/04/07/190838/claims.parquet"
+        }
+      }
+    }
+  ]
+}
